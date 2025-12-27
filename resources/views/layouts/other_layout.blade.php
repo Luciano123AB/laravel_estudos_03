@@ -7,10 +7,17 @@
     <title>@yield("page_title")</title>
 </head>
 <body>
-    <h1>Texto top no layout</h1>
+    @section("top_bar")
+        <div>Esta é a barra de topo do layout.</div>
+    @show
+
+    <h1>Texto top do layout.</h1>
 
     @yield("content")
 
-    <h1>Texto bottom no layout</h1>
+    <h1>Texto bottom do layout.</h1>    
+    <hr>
+
+    @yield("bottom_bar")
 </body>
 </html>
