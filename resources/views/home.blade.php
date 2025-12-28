@@ -1,13 +1,11 @@
 @extends("layouts.main_layout")
 
-@section("page_title", "Home Page")
-    
 @section("content")
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col card p-5 bg-secondary text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet est reprehenderit quae hic nobis accusantium saepe, ut ad, corporis excepturi cum veniam facere labore. Magni dolorem iste dolore repellat! Quae.
-            </div>
-        </div>
-    </div>
+    <h3>Este texto faz parta da view.</h3>
+    {{-- Renderizar o component: --}}
+    <x-my-component />
+
+    {{-- Renderizar component que existe dentro de subpasta. --}}
+    <x-admin.admin-card />
+    <h3>Este texto faz parte da view.</h3>
 @endsection
