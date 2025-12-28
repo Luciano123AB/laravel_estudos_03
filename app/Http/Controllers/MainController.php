@@ -11,7 +11,7 @@ class MainController extends Controller
         
         //As linguas que cada pessoa fala:
         $data = [
-            "Joao" => [
+            "João" => [
                 "Portuguese",
                 "Inguês"
             ],
